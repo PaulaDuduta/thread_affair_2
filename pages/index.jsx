@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
@@ -9,17 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="header text-warning">
-        HELLO WORLD
-        <img src="/images/logo.jpg" alt=""></img>
-        <i className="fa-solid fa-phone"></i>
-      </header>
+      <Header></Header>
 
-      <main className="content">
-        <div className="badge">20off</div>
-        <div className="badge badge-secondary">new entry</div>
-        <div className="badge badge-oversized">%</div>
-      </main>
+      <main className="content"></main>
 
       <footer className="footer"></footer>
     </div>

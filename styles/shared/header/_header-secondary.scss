@@ -1,0 +1,84 @@
+.header-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  .header-logo {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+
+    @include media-breakpoint-up(lg) {
+      grid-row: 2 / span 1;
+    }
+
+    img {
+      width: 100px;
+
+      @include media-breakpoint-up(lg) {
+        width: 180px;
+      }
+    }
+  }
+
+  .header-search {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: start;
+    color: $brand-primary;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  .header-controls {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: end;
+    color: $brand-primary;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      li:nth-child(2) {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+      }
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+
+  .header-support {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
+    justify-self: start;
+
+    ul {
+      display: flex;
+      gap: 4px;
+    }
+  }
+}
+
+// some good practice of another way to write classes
+// or you can use the above way
+// .header {
+//   &-logo {}
+
+//   &-support {}
+
+//   &-search
+// } or ->
