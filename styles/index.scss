@@ -16,7 +16,10 @@
 @import 'reset';
 
 // shared
-@import 'shared/index';
+@import './shared/index';
+
+//homepage
+@import './homepage/index';
 
 body {
   font-size: 16px;
