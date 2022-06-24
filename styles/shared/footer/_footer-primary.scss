@@ -1,5 +1,9 @@
 .footer-primary {
   background-color: $brand-secondary;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 49px;
+  color: $gray-tertiary;
 
   // .footer-primary-inner
   &-inner {
@@ -23,10 +27,12 @@
     flex-wrap: wrap;
     row-gap: 43px;
     grid-area: nav;
+    line-height: 30px;
 
     @include media-breakpoint-up('lg') {
       flex-wrap: nowrap;
       column-gap: 110px;
+      line-height: 20px;
     }
 
     ul {
@@ -40,23 +46,64 @@
 
   .footer-contact {
     grid-area: contact;
+    font-size: 14px;
+    padding-bottom: 20px;
 
     @include media-breakpoint-up('lg') {
       align-self: end;
+      padding: 0;
     }
 
     p {
       margin-bottom: 0;
+      text-transform: initial;
+
+      a {
+        display: block;
+        text-transform: initial;
+      }
+
+      a[href*='mailto'] {
+        color: $brand-primary;
+      }
+    }
+
+    h1 {
+      font-size: 16px;
+      font-weight: 300;
+
+      span {
+        font-weight: 700;
+      }
     }
   }
 
   .footer-support {
     grid-area: support;
     justify-self: center;
+    color: $brand-primary;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
 
     @include media-breakpoint-up('lg') {
       justify-self: start;
       align-self: end;
+      color: $gray-tertiary;
+
+      i {
+        color: $brand-primary;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    i {
+      font-size: 35px;
+      text-align: center;
     }
   }
 }
