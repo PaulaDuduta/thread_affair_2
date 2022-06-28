@@ -10,15 +10,39 @@
     justify-self: center;
     align-self: center;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up('lg') {
       grid-row: 2 / span 1;
     }
 
     img {
       width: 100px;
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up('lg') {
         width: 180px;
+      }
+    }
+  }
+
+  .header-support {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
+    justify-self: start;
+    font-size: 16px;
+
+    i {
+      font-size: 25px;
+      margin-right: 10px;
+      color: $brand-primary;
+    }
+
+    ul {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+
+      a {
+        margin: 0 25px;
       }
     }
   }
@@ -51,70 +75,43 @@
       align-items: center;
       gap: 25px;
 
-      .qty {
-        display: none;
-      }
-
-      li:nth-child(2) {
+      li:first-child {
         a {
-          display: flex;
-          align-items: center;
-          gap: 6px;
+          position: relative;
+
+          .qty {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            min-width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            color: $white;
+            background-color: $brand-primary;
+          }
         }
       }
+    }
 
-      li:last-child {
-        order: -1;
+    li:nth-child(2) {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
+    }
+
+    li:last-child {
+      order: -1;
+    }
+
+    img {
+      width: 25px;
 
       @include media-breakpoint-up('lg') {
-        .qty {
-          min-width: 10px;
-          height: 18px;
-          background-color: $brand-primary;
-          color: $white;
-          font-weight: 700;
-          font-size: 14px;
-          border-radius: 10px;
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0 4px;
-          position: sticky;
-          right: 21em;
-        }
-      }
-
-      img {
-        width: 25px;
-
-        @include media-breakpoint-up('lg') {
-          width: 41px;
-        }
-      }
-    }
-  }
-
-  .header-support {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    align-self: center;
-    justify-self: start;
-    font-size: 16px;
-
-    i {
-      font-size: 25px;
-      margin-right: 10px;
-      color: $brand-primary;
-    }
-
-    ul {
-      display: flex;
-      align-items: baseline;
-      gap: 4px;
-
-      a {
-        margin: 0 25px;
+        width: 41px;
       }
     }
   }

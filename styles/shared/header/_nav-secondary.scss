@@ -3,5 +3,16 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin: 26px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  a {
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $brand-primary;
+    }
   }
 }

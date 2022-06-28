@@ -1,6 +1,13 @@
 @import './home-payment';
+@import './home-social';
+@import './home-newsletter';
+@import './content-banner';
 
-.content {
+.content-main {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 24px;
+
   & > section {
     & > header {
       text-align: center;
@@ -8,7 +15,7 @@
 
       h1 {
         text-transform: uppercase;
-        color: $gray-secondary;
+        color: $brand-primary;
 
         @include media-breakpoint-up('lg') {
           font-weight: 700;

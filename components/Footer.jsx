@@ -179,21 +179,21 @@ export default function Footer() {
             <ul>
               <li>
                 <a href="https://x.ro" title="Support">
-                  <i class="fa-solid fa-phone"></i> <br />
+                  <i className="fa-solid fa-phone"></i> <br />
                   Support
                 </a>
               </li>
 
               <li>
                 <a href="https://x.ro" title="Chat">
-                  <i class="fa-solid fa-comments"></i> <br />
+                  <i className="fa-solid fa-comments"></i> <br />
                   Chat
                 </a>
               </li>
 
               <li>
                 <a href="https://x.ro" title="Email">
-                  <i class="fa-solid fa-at"></i> <br />
+                  <i className="fa-solid fa-at"></i> <br />
                   Email
                 </a>
               </li>

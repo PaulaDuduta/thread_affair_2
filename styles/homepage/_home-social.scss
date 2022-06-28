@@ -1,0 +1,25 @@
+.home-social {
+  header {
+    color: $brand-primary;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    a {
+      display: flex;
+      border: 2px solid $gray-secondary;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    i[class*='fa-'] {
+      font-size: 24px;
+    }
+  }
+}
