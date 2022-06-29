@@ -10,9 +10,9 @@ export function CatalogPreviews() {
           </h1>
           <p>
             Accomplish new achievements with a bold new style from the brilliant
-            collection of men's designer suits. <br />
+            collection of mens designer suits. <br />
             For the finest custom tailored experience, be sure to explore our
-            selection of premium fabrics from one of the world's oldest fabric
+            selection of premium fabrics from one of the worlds oldest fabric
             mills, Vitale Barberis Canonico.
           </p>
         </header>
@@ -39,9 +39,9 @@ export function CatalogPreviews() {
           </h1>
           <p>
             Accomplish new achievements with a bold new style from the brilliant
-            collection of men's designer suits. <br />
+            collection of mens designer suits. <br />
             For the finest custom tailored experience, be sure to explore our
-            selection of premium fabrics from one of the world's oldest fabric
+            selection of premium fabrics from one of the worlds oldest fabric
             mills, Vitale Barberis Canonico.
           </p>
         </header>
@@ -62,9 +62,9 @@ export function CatalogPreviews() {
           </h1>
           <p>
             Accomplish new achievements with a bold new style from the brilliant
-            collection of men's designer suits. <br />
+            collection of mens designer suits. <br />
             For the finest custom tailored experience, be sure to explore our
-            selection of premium fabrics from one of the world's oldest fabric
+            selection of premium fabrics from one of the worlds oldest fabric
             mills, Vitale Barberis Canonico.
           </p>
         </header>
