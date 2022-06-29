@@ -46,7 +46,7 @@ export default function HeaderSecondary() {
           <li>
             <a href="www.google.com" title="Cart">
               <i className="fa-solid fa-cart-shopping"></i>
-              <span className="qty">3</span>
+              <span className="qty d-none d-lg-block">3</span>
             </a>
           </li>
 

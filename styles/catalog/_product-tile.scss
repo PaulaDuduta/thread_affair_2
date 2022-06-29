@@ -1,0 +1,22 @@
+.product-tile {
+  width: 100%;
+
+  &-header {
+    position: relative;
+
+    .badge {
+      top: 20px;
+      right: 20px;
+      position: absolute;
+    }
+  }
+
+  &-image-container {
+    display: block;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

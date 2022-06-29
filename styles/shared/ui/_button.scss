@@ -1,5 +1,5 @@
 .button {
-  background-color: $brand-primary;
+  background-color: transparent;
   text-transform: uppercase;
   color: $white;
   text-decoration: none;
@@ -12,8 +12,8 @@
 
   &:hover {
     // .button-hover
-    color: $brand-primary;
-    background-color: transparent;
+    color: $white;
+    background-color: $brand-primary;
   }
 
   &-large {

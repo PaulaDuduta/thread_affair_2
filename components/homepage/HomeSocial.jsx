@@ -1,6 +1,6 @@
 export default function HomeSocial() {
   return (
-    <section className="home-social">
+    <section className="home-social my-5">
       <header>
         <h1>
           <span>We are</span> Social!
