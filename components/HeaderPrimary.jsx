@@ -26,6 +26,12 @@ export default function HeaderPrimary() {
               Accesorii
             </a>
           </li>
+
+          <li>
+            <div className="animated-button">
+              <span className="label">Customize your suit</span>
+            </div>
+          </li>
         </ul>
       </nav>
 

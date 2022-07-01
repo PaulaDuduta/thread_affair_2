@@ -18,15 +18,19 @@
         color: $brand-primary;
 
         @include media-breakpoint-up('lg') {
-          font-weight: 700;
+          font-weight: 300;
           color: $gray-secondary;
           text-transform: unset;
           font-size: 41px;
 
           span {
-            font-weight: 300;
+            font-weight: 700;
           }
         }
+      }
+
+      p {
+        font-size: 14px;
       }
     }
   }

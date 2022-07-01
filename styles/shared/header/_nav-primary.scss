@@ -6,6 +6,7 @@
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 300;
+    position: relative;
 
     a {
       padding: 8px 16px;
@@ -15,6 +16,39 @@
       &:hover {
         background-color: $brand-primary;
         color: $white;
+      }
+    }
+
+    .animated-button {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      border: 1px solid $brand-primary;
+      border-radius: 24px;
+      cursor: pointer;
+      align-items: center;
+      position: absolute;
+      overflow: hidden;
+      transition: width 0.2s linear, border-radius 0.2s linear;
+      font-size: 14px;
+      background: url('/images/icons/Icon-copy.png') no-repeat;
+      background-size: contain;
+
+      .label {
+        position: absolute;
+        left: 50px;
+        width: 220px;
+        opacity: 0;
+        transition: opacity 0.2s linear;
+      }
+
+      &:hover {
+        width: 220px;
+        border-radius: 24px;
+      }
+
+      &:hover .label {
+        opacity: 1;
       }
     }
   }

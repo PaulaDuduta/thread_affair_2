@@ -19,4 +19,41 @@
       display: block;
     }
   }
+
+  &-title {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+
+    span:first-child {
+      color: $black;
+      font-weight: 500;
+    }
+
+    span:nth-child(2) {
+      font-weight: 500;
+    }
+  }
+
+  &-subtitle {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 19px;
+  }
+
+  &-pricing {
+    font-size: 24px;
+    font-weight: 200;
+
+    .catalog-price {
+      text-decoration: line-through;
+      font-size: 18px;
+      line-height: 12px;
+    }
+
+    span:last-child {
+      color: $brand-primary;
+      font-weight: 500;
+    }
+  }
 }

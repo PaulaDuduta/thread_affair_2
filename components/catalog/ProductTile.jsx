@@ -1,6 +1,6 @@
-export default function ProducTile() {
+export default function ProductTile() {
   return (
-    <article className="product-tile">
+    <article className="product-tile mt-2 mb-5">
       <header className="product-tile-header">
         <a
           href="https://x.ro"
@@ -29,12 +29,12 @@ export default function ProducTile() {
       <section className="product-tile-pricing text-center">
         <span className="catalog-price d-block">399.00</span>
 
-        <span className="price">USD</span>
+        <span className="price">USD </span>
 
         <span>299</span>
       </section>
 
-      <footer className="product-tile-controls text-center mt-4">
+      <footer className="product-tile-controls text-center mt-3">
         <button className="button" type="button" title="Add to Cart">
           Add to Cart
         </button>
