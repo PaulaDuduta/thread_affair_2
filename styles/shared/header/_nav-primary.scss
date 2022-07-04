@@ -31,8 +31,8 @@
       overflow: hidden;
       transition: width 0.2s linear, border-radius 0.2s linear;
       font-size: 14px;
-      background: url('/images/icons/Icon-copy.png') no-repeat;
-      background-size: contain;
+      background: url('/images/icons/Icon-copy.png') left center no-repeat;
+      background-size: 20px;
 
       .label {
         position: absolute;
